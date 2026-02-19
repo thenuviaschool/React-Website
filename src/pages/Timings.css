@@ -1,0 +1,200 @@
+.timing-banner {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-teal));
+  padding: 40px 0;
+  margin-top: -1px;
+}
+
+.status-alert {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.status-alert i {
+  font-size: 48px;
+  color: var(--accent-gold);
+}
+
+.alert-content h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.alert-content p {
+  opacity: 0.9;
+  font-size: 15px;
+}
+
+.timing-table-container {
+  background: var(--bg-white);
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.table-tabs {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-tabs button {
+  flex: 1;
+  padding: 20px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-light);
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.table-tabs button:hover {
+  background: var(--bg-light);
+  color: var(--primary-dark);
+}
+
+.table-tabs button.active {
+  background: var(--primary-dark);
+  color: white;
+}
+
+.timings-content {
+  padding: 40px;
+}
+
+.timing-description {
+  background: rgba(13, 148, 136, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  border-left: 4px solid var(--primary-teal);
+}
+
+.timing-description h4 {
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.timing-description p {
+  color: var(--text-light);
+  font-size: 15px;
+}
+
+.timing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timing-table th {
+  background: var(--primary-dark);
+  color: white;
+  padding: 18px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.timing-table td {
+  padding: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.timing-table tr:hover {
+  background: var(--bg-light);
+}
+
+.time-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(13, 148, 136, 0.1);
+  color: var(--primary-teal);
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.class-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--accent-gold);
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.note-card {
+  background: var(--bg-white);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.note-card i {
+  font-size: 40px;
+  color: var(--primary-teal);
+  margin-bottom: 20px;
+}
+
+.note-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--primary-dark);
+}
+
+.note-card p {
+  color: var(--text-light);
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .status-alert {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .timings-content {
+    padding: 20px;
+  }
+  
+  .timing-table {
+    font-size: 14px;
+  }
+  
+  .timing-table th,
+  .timing-table td {
+    padding: 12px;
+  }
+  
+  .notes-grid {
+    grid-template-columns: 1fr;
+  }
+}
