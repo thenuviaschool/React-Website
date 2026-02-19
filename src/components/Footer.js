@@ -10,9 +10,9 @@ function Footer() {
             <h3>The Nuvia School and Academy</h3>
             <p>Building Good Humans Not Just Good Students</p>
             <div className="social-links">
-              <a href="#"><i className="fab fa-facebook-f"></i></a>
-              <a href="#"><i className="fab fa-whatsapp"></i></a>
-              <a href="#"><i className="fab fa-instagram"></i></a>
+              <a href="https://facebook.com"><i className="fab fa-facebook-f"></i></a>
+              <<a href="https://wa.me/923248843622" target="_blank" rel="noopener noreferrer" className="whatsapp">><i className="fab fa-whatsapp"></i></a>
+              <a href="https://instagram.com"><i className="fab fa-instagram"></i></a>
             </div>
           </div>
           <div className="footer-links">
@@ -38,5 +38,6 @@ function Footer() {
     </footer>
   );
 }
+
 
 export default Footer;
