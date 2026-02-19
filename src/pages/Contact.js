@@ -236,11 +236,11 @@ JazakAllah Khair!`;
               <div className="social-section">
                 <h4>Follow Us</h4>
                 <div className="social-links large">
-                  <a href="#" className="facebook"><i className="fab fa-facebook-f"></i></a>
+                  <a href="https://facebook.com" className="facebook"><i className="fab fa-facebook-f"></i></a>
                   <a href="https://wa.me/923248843622" target="_blank" rel="noopener noreferrer" className="whatsapp">
                     <i className="fab fa-whatsapp"></i>
                   </a>
-                  <a href="#" className="instagram"><i className="fab fa-instagram"></i></a>
+                  <a href="https://instagram.com" className="instagram"><i className="fab fa-instagram"></i></a>
                 </div>
               </div>
             </div>
@@ -366,5 +366,6 @@ JazakAllah Khair!`;
     </>
   );
 }
+
 
 export default Contact;
